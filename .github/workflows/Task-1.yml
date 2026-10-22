@@ -1,0 +1,17 @@
+
+name: Intern Task-1
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  task-1:
+    runs-on: ubuntu-latest
+    
+    steps:
+       - name: checkout code
+         uses: actions/checkout@v4
+         
+       - name: Print Hello from Devops Intern Task-1
+         run: echo Hello, This is my first Task, Completed for Elevate Labs
