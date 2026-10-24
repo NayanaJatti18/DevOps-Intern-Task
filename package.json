@@ -1,0 +1,11 @@
+{
+  "name": "cicd-webpage",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node -e \"const fs=require('fs'); if(!fs.existsSync('public/index.html')) { console.error('index.html missing'); process.exit(1); } console.log('Test passed: index.html exists');\""
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
